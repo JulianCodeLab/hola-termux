@@ -1,0 +1,45 @@
+===============================
+📌 GUÍA RÁPIDA – TERMUX + GITHUB
+===============================
+
+📂 RUTA DEL PROYECTO
+-------------------
+cd /storage/emulated/0/WEB/proyectos/hola-termux
+
+🚀 COMANDO PARA SUBIR CAMBIOS
+----------------------------
+bash actualizar_repo.sh
+
+🧠 QUÉ HACE EL SCRIPT
+--------------------
+✔ Busca el ZIP en la carpeta Download
+✔ Pide el mensaje del commit
+✔ Descomprime el ZIP
+✔ Copia los archivos al repo
+✔ Ejecuta git add .
+✔ Ejecuta git commit
+✔ Ejecuta git push
+✔ Elimina el ZIP y archivos temporales
+
+📦 REQUISITOS
+-------------
+- El ZIP debe estar en:
+  /storage/emulated/0/Download/
+
+- El ZIP debe contener los archivos del proyecto
+  (ej: index.html o index.js)
+
+🆘 SI ALGO FALLA
+---------------
+1. Verifica que el ZIP exista:
+   ls /storage/emulated/0/Download/*.zip
+
+2. Vuelve a ejecutar:
+   bash actualizar_repo.sh
+
+😎 COMBO FINAL (LO ÚNICO QUE NECESITAS)
+-------------------------------------
+cd /storage/emulated/0/WEB/proyectos/hola-termux
+bash actualizar_repo.sh
+
+🔥 FIN – GitHub se actualiza solo
